@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Ruído – Etapa 1 (Fato ocorrido)</title>
+  <link rel="stylesheet" href="assets/styles/global.css">
+  <link rel="stylesheet" href="assets/styles/flow.css">
+</head>
+<body>
+  <div class="container">
+    <div class="layout">
+      <aside class="steps">
+        <h3>Etapas do Registro</h3>
+        <ol>
+          <li class="active">Fato ocorrido</li>
+          <li class="disabled">Data e hora</li>
+          <li class="disabled">Revisão</li>
+        </ol>
+      </aside>
+
+      <main class="content-card">
+        <h1>Ruído Excessivo — Fato ocorrido</h1>
+        <p>Descreva o que aconteceu e onde.</p>
+
+        <form id="form-ruido-1">
+          <label>Local (endereço):
+            <input type="text" id="local" required>
+          </label>
+
+          <div class="form-row">
+            <label>Tipo de ruído:
+              <input type="text" id="tipo" placeholder="som alto, música, obra..." required>
+            </label>
+            <label>Intensidade (0 a 10):
+              <input type="number" id="nivel" min="0" max="10" required>
+            </label>
+          </div>
+
+          <div class="footer">
+            <a class="botao btn-secondary" href="index.html">Etapa anterior</a>
+            <input type="submit" class="botao" value="Próxima etapa">
+          </div>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/scripts/util.js"></script>
+  <script src="assets/scripts/ruido-step1.js"></script>
+</body>
+</html>

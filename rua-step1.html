@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Buraco na Rua – Etapa 1</title>
+  <link rel="stylesheet" href="assets/styles/global.css">
+  <link rel="stylesheet" href="assets/styles/flow.css">
+</head>
+<body>
+  <div class="container">
+    <div class="layout">
+      <aside class="steps">
+        <h3>Etapas do Registro</h3>
+        <ol>
+          <li class="active">Fato ocorrido</li>
+          <li class="disabled">Data e hora</li>
+          <li class="disabled">Revisão</li>
+        </ol>
+      </aside>
+
+      <main class="content-card">
+        <h1>Buraco na Rua — Fato ocorrido</h1>
+
+        <form id="form-rua-1">
+          <label>Rua/Avenida:
+            <input type="text" id="rua" required>
+          </label>
+          <div class="form-row">
+            <label>Bairro:
+              <input type="text" id="bairro" required>
+            </label>
+            <label>Diâmetro aproximado (cm):
+              <input type="number" id="diametro" min="1" required>
+            </label>
+          </div>
+
+          <div class="footer">
+            <a class="botao btn-secondary" href="index.html">Etapa anterior</a>
+            <input type="submit" class="botao" value="Próxima etapa">
+          </div>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <script src="assets/scripts/util.js"></script>
+  <script src="assets/scripts/rua-step1.js"></script>
+</body>
+</html>

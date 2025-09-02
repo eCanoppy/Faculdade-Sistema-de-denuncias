@@ -1,0 +1,18 @@
+.layout { display: grid; grid-template-columns: 260px 1fr; gap: 16px }
+@media (max-width: 900px){ .layout { grid-template-columns: 1fr } }
+.steps { background: #fafafa; border: 1px solid #eee; border-radius: 8px; padding: 12px }
+.steps h3 { margin: 6px 0 12px; font-size: 16px; color: #333 }
+.steps ol { list-style: none; padding: 0; margin: 0; counter-reset: s }
+.steps li { display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 8px; margin-bottom: 6px; color: #666 }
+.steps li::before { counter-increment: s; content: counter(s); width: 26px; height: 26px; display: grid; place-items: center; border-radius: 999px; border: 1px solid #ddd; background: #fff; color: #555; font-weight: 600 }
+.steps li.active { background: #e9f5ff; color: #0b5cab; font-weight: 600 }
+.steps li.active::before { border-color: #0b5cab; color: #0b5cab; }
+.steps li.done { color: #2b7a2b; }
+.steps li.done::before { background: #2b7a2b; color: #fff; border-color: #2b7a2b; content: "✓"; }
+.steps li.disabled { opacity: .6 }
+.content-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 16px }
+.content-card h1 { margin-top: 0; text-align: left }
+.form-row { display: grid; gap: 12px; grid-template-columns: 1fr 1fr }
+@media (max-width: 900px){ .form-row { grid-template-columns: 1fr } }
+.footer { margin-top: 12px; display: flex; justify-content: space-between; gap: 10px }
+.btn-secondary { background: #999 !important }
